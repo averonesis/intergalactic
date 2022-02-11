@@ -264,7 +264,7 @@ function Page() {
           <NextGuide>
             {getPrevPage(navigationPage.title, allPages) && (
               <div>
-                <ArrowLeftXS mr={2} />
+                <ArrowLeftXS mr={2} mt={1} />
                 <a
                   href={'/' + getPrevPage(navigationPage.title, allPages).route}
                   rel="noopener noreferrer"
@@ -281,7 +281,7 @@ function Page() {
                 >
                   {getNextPage(navigationPage.title, allPages).title}
                 </a>
-                <ArrowRightXS ml={2} />
+                <ArrowRightXS ml={2} mt={1} />
               </div>
             )}
           </NextGuide>
