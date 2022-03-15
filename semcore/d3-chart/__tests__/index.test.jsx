@@ -1,13 +1,13 @@
 import React from 'react';
 // import { bisector } from 'd3-array';
 import { scaleLinear, scaleBand } from 'd3-scale';
-import { testing } from '@semcore/jest-preset-ui';
+import { testing } from '@semcore/cli/tools/jest-preset-ui';
 const { render, fireEvent, cleanup } = testing;
-import { shared as testsShared } from '@semcore/jest-preset-ui';
+import { shared as testsShared } from '@semcore/cli/tools/jest-preset-ui';
 const { shouldSupportClassName, shouldSupportRef } = testsShared;
 import { Plot, YAxis, XAxis, Venn, Bar, StackBar, colors } from '../src';
 import { getIndexFromData } from '../src/utils';
-import { snapshot } from '@semcore/jest-preset-ui';
+import { snapshot } from '@semcore/cli/tools/jest-preset-ui';
 import { minMax, Area, StackedArea } from '@semcore/d3-chart';
 import { curveCardinal } from 'd3-shape';
 
